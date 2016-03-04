@@ -6,7 +6,7 @@
 /*   By: ale-naou <ale-naou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/23 14:49:26 by ale-naou          #+#    #+#             */
-/*   Updated: 2016/03/04 14:49:52 by ale-naou         ###   ########.fr       */
+/*   Updated: 2016/03/04 18:05:18 by ale-naou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int			ft_printf(const char *restrict format, ...)
 	e.alen = 0;
 	e.plen = 0;
 	va_start(e.ap, format);
-	while (format[e.alen] != 0)
+	while (format && format[e.alen] != 0)
 	{
 		if (format[e.alen] == '%')
 		{
